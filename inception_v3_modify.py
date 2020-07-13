@@ -449,8 +449,10 @@ class BasicConv2d(nn.Module):
 
 # modified version
 class my_incption_v3(nn.Module):
+    # model 可以通过torchvison.models中加载
+    # model = torchvison.models.inception_v3(pretrained=True)
     def __init__(self, model, num_classes=1000, aux_logits=True, transform_input=False):
-        super(incption_v3, self).__init__()
+        super(my_incption_v3, self).__init__()
         self.aux_logits = aux_logits
         self.transform_input = transform_input
         self.Conv2d_1a_3x3 = model.Conv2d_1a_3x3
