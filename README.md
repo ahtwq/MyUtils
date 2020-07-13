@@ -10,4 +10,4 @@ share my script of research
 - 一种标签光滑策略：./LabelSmoothing_pytorch.py
 
 ## others
-- 图片拼接 ./
+- 图片拼接 ./ImageJoin.py
